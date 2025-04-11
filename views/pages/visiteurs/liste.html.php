@@ -135,4 +135,66 @@
     </div>
 
     </div>
+    <dialog id="addRegisterModal" class="modal">
+        <div class="modal-box w-full w-96">
+            <h3 class="font-medium text-md text-gray-600">
+                veuillez renseignez vos identifiants
+            </h3>
+            <form method="POST" action="" class="mt-4 space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+                    <!-- Informations personnelles -->
+                    <div class="space-y-4">
+                        <div class="form-control">
+                            <label class="label font-medium">Nom</label>
+                            <input
+                                type="text"
+                                name="nom"
+                                value=""
+                                class="input input-bordered w-full" />
+                        </div>
+                        <div class="form-control">
+                            <label class="label font-medium">Prénom</label>
+                            <input
+                                type="text"
+                                name="prenom"
+                                value=""
+                                class="input input-bordered w-full" />
+                        </div>
+
+                        <div class="form-control">
+                            <label class="label font-medium">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                class="input input-bordered w-full" />
+                        </div>
+
+                        <div class="form-control">
+                            <label class="label font-medium">Téléphone</label>
+                            <input
+                                type="text"
+                                name="telephone"
+                                class="input input-bordered w-full" />
+                        </div>
+
+                        <div class="form-control">
+                            <label class="label font-medium">Mot de passe</label>
+                            <input
+                                type="password"
+                                name="password"
+                                class="input input-bordered w-full" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-action">
+                    <button type="submit" class="btn btn-primary w-full">
+                        Enregistrer
+                    </button>
+                </div>
+            </form>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
 </main>
