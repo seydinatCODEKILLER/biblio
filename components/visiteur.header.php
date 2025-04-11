@@ -5,7 +5,6 @@
     </div>
     <div class="flex items-center gap-2">
         <a href="<?= ROOT_URL ?>?controllers=security&page=connexion" class="btn btn-outline">Connexion</a>
-        <button class="btn btn-primary">Creer un compte</button>
-
+        <button class="btn btn-primary" onclick="addLoginModal.showModal()">Creer un compte</button>
     </div>
 </div>
