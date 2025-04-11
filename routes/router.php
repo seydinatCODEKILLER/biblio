@@ -3,9 +3,7 @@
 $controllers = [
     "security" => "security.controller.php",
     "responsable" => "responsable.controller.php",
-    "attacher" => "attacher.controller.php",
-    "professeur" => "professeur.controller.php",
-    "etudiant" => "etudiant.controller.php",
+    "public" => "catalogue.controller.php",
     "notFound" => "notFound.controller.php"
 ];
 
@@ -21,6 +19,6 @@ function handleController(string $key)
             redirectURL("notFound", "error");
         }
     } else {
-        redirectURL("notFound", "error");
+        redirectURL("public", "liste");
     }
 }
