@@ -1,6 +1,6 @@
 <?php
 
-function getAllOuvrages(array $filters = [], int $page = 1, int $perPage = 10): array
+function getAllOuvrages(array $filters = [], int $page = 1, int $perPage = 5): array
 {
     $sql = "SELECT o.id, o.code, o.titre, o.date_edition, o.editeur, o.langue, 
             o.image_couverture, o.nombre_pages, 
